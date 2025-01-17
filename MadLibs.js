@@ -97,7 +97,7 @@ function story(n) {
 }
 
 function next() {
-  words.add(document.getElementById("fill").value);
+  words.add(getText());
   if(entries.length > 1) {
     document.getElementById("main").innerHTML = entries.shift() + " <input type='text' id=fill><button onclick='next()'>Next</button>";
   } else {
@@ -106,7 +106,7 @@ function next() {
 }
 
 function finish() {
-  words.add(document.getElementById("fill").value);
+  words.add(getText());
   
   document.getElementById("main").innerHTML = "";
   while(story.length > 0) {

@@ -115,7 +115,7 @@ function finish() {
       document.getElementById("main").innerHTML += words.remove();
     }
   }
-  document.getElementById("main").innerHTML += "<br><br><button onclick='reset()'>Pick another story</button>
+  document.getElementById("main").innerHTML += "<br><br><button onclick='reset()'>Pick another story</button>";
 }
 
 

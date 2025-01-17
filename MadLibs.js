@@ -81,7 +81,7 @@ var entries1 = ["Proper Noun (Person's Name)","Noun","Adjective (Feeling)","Verb
 var entries2 = ["Number", "Measure of time", "Mode of Transportation", "Adjective", "Adjective", "Noun", "Color", "Part of the Body", "Verb", "Number", "Noun", "Noun", "Part of the Body", "Verb", "Noun", "Adjective", "Silly Word", "Noun"];
 var entries3 = ["Proper Noun (Person’s Name)", "Adjective", "Color", "Animal", "Place", "Adjective", "Magical Creature (Plural)", "Adjective", "Magical Creature (Plural)", "Room in a House", "Noun", "Noun", "Noun", "Adjective", "Noun (Plural)", "Number", "Measure of time", "Verb (ending in ing)", "Adjective", "Noun"];
 
-function story(n) {
+function stories(n) {
   if(n===1) {
     story = story1;
     entries = entries1;
@@ -115,13 +115,13 @@ function finish() {
       document.getElementById("main").innerHTML += words.remove();
     }
   }
-  //document.getElementById("main").innerHTML += "<br><br><button onclick='reset()'>Pick another story</button>";
+  document.getElementById("main").innerHTML += "<br><br><button onclick='reset()'>Pick another story</button>";
 }
 
 
-//function reset() {
-//  document.getElementById("main").innerHTML = "Choose a Story"+
-//    "<br><button onclick='story(1)'>Story 1</button>"+
-//    "<br><button onclick='story(2)'>Story 2</button>"+
-//    "<br><button onclick='story(3)'>Story 3</button>";
-//}
+function reset() {
+  document.getElementById("main").innerHTML = "Choose a Story"+
+    "<br><button onclick='stories(1)'>Story 1</button>"+
+    "<br><button onclick='stories(2)'>Story 2</button>"+
+    "<br><button onclick='stories(3)'>Story 3</button>";
+}

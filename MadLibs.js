@@ -115,10 +115,13 @@ function finish() {
       document.getElementById("main").innerHTML += words.remove();
     }
   }
-  document.getElementById("main").innerHTML += "<br><br><button onclick='reset()'>Pick another story</button>";
+  //document.getElementById("main").innerHTML += "<br><br><button onclick='reset()'>Pick another story</button>";
 }
 
 
-function reset() {
-  document.getElementById("main").innerHTML = "Choose a Story <br><button onclick='story(1)'>Story 1</button><br><button onclick='story(2)'>Story 2</button><br><button onclick='story(3)'>Story 3</button>";
-}
+//function reset() {
+//  document.getElementById("main").innerHTML = "Choose a Story"+
+//    "<br><button onclick='story(1)'>Story 1</button>"+
+//    "<br><button onclick='story(2)'>Story 2</button>"+
+//    "<br><button onclick='story(3)'>Story 3</button>";
+//}
